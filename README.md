@@ -1,1 +1,2 @@
-# mocking-examples
+# Mocking Examples
+Examples that demonstrate mocking
