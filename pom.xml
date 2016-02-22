@@ -17,6 +17,7 @@
     <module>01-mocking-classical</module>
     <module>02-mocking-mocking</module>
     <module>03-mocking-mockito</module>
+    <module>04-mocking-database</module>
   </modules>
 
 
