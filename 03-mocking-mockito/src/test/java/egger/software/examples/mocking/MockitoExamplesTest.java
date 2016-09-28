@@ -149,7 +149,7 @@ public class MockitoExamplesTest {
 
 			@Override
 			public String answer(InvocationOnMock invocation) throws Throwable {
-				int id = invocation.getArgumentAt(1, Integer.class);
+				int id = invocation.getArgument(1);
 				if (id == 25)
 					return "Der Hobbit";
 				return "Der Herr der Ringe";
