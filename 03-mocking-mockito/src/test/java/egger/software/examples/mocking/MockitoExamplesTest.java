@@ -63,7 +63,7 @@ public class MockitoExamplesTest {
 	}
 	
 	@Test
-	public void multipleReturnValueHowTo() {
+	public void multipleReturnValuesHowTo() {
 		// given
 		Database db = mock(Database.class);
 		when(db.nextId()).thenReturn(25).thenReturn(26);
@@ -83,7 +83,7 @@ public class MockitoExamplesTest {
 		// given
 		Database db = mock(Database.class);
 		when(db.select(eq("BOOK"), anyInt())).thenReturn("Der Hobbit");
-		Library library = new Library(db);
+		Library library = new Library(db); // Dependency injection without Framework ;-)
 
 		// when
 		Book result = library.findBookById(25);
